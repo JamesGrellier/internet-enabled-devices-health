@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Disentangling pathways between Internet-enabled device use and health: a systematic mapping review of reviews</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f6f8;
+      color: #222;
+    }
+
+    header {
+      padding: 18px 28px;
+      background: #1f2933;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    header p {
+      margin: 6px 0 0 0;
+      font-size: 14px;
+      color: #d5dce3;
+    }
+
+    .toolbar {
+      padding: 12px 24px;
+      background: white;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .toolbar button {
+      padding: 8px 12px;
+      border: 1px solid #bbb;
+      border-radius: 6px;
+      background: #ffffff;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .toolbar button:hover {
+      background: #eef3f8;
+    }
+
+    .toolbar button.active {
+      background: #1f2933;
+      color: white;
+      border-color: #1f2933;
+    }
+
+    .viewer {
+      height: calc(100vh - 125px);
+      padding: 12px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Grellier et al. (2026) Disentangling pathways between Internet-enabled device use and health: a systematic mapping review of reviews</h1>
+  <p>Interactive maps of relationships identified in the review. Click a connection to view supporting references.</p>
+</header>
+
+<div class="toolbar">
+  <button class="active" onclick="loadMap(this, 'GOLIAT_Theme_All_with_panel.html')">All relationships</button>
+  <button onclick="loadMap(this, 'GOLIAT_Theme_A_with_panel.html')">Theme A</button>
+  <button onclick="loadMap(this, 'GOLIAT_Theme_B_with_panel.html')">Theme B</button>
+  <button onclick="loadMap(this, 'GOLIAT_Theme_C_with_panel.html')">Theme C</button>
+  <button onclick="loadMap(this, 'GOLIAT_Theme_D_with_panel.html')">Theme D</button>
+  <button onclick="loadMap(this, 'GOLIAT_Theme_E_with_panel.html')">Theme E</button>
+  <button onclick="loadMap(this, 'GOLIAT_Theme_F_with_panel.html')">Theme F</button>
+  <button onclick="loadMap(this, 'GOLIAT_Positive_with_panel.html')">Positive impacts</button>
+  <button onclick="loadMap(this, 'GOLIAT_Negative_with_panel.html')">Negative impacts</button>
+</div>
+
+<div class="viewer">
+  <iframe id="mapFrame" src="GOLIAT_Theme_All_with_panel.html"></iframe>
+</div>
+
+<script>
+function loadMap(button, file) {
+  document.getElementById("mapFrame").src = file;
+
+  var buttons = document.querySelectorAll(".toolbar button");
+  buttons.forEach(function(btn) {
+    btn.classList.remove("active");
+  });
+
+  button.classList.add("active");
+}
+</script>
+
+</body>
+</html>
+
