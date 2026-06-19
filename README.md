@@ -4,11 +4,14 @@
 
 ## Overview
 
-This repository contains an interactive systems map of relationships identified in a systematic mapping review of reviews examining the health impacts of internet-enabled technologies and online activities.
+This repository contains an interactive systems map of relationships identified in a systematic mapping review of reviews examining the health impacts of internet-enabled technologies and online activities (Figure 1).
 
 The visualisation was originally developed in Kumu and subsequently recreated using R and HTML to provide a fully reproducible, platform-independent, and archivable version of the map.
 
 The interactive maps allow users to explore relationships between exposures, outcomes, moderators, and other concepts identified in the review, together with the supporting references from the evidence base.
+
+![Main map](Images/Systems map screenshot.png)
+Figure 1
 
 ## Contents
 
