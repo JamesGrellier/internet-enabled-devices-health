@@ -10,7 +10,9 @@ The visualisation was originally developed in Kumu and subsequently recreated us
 
 The interactive maps allow users to explore relationships between exposures, outcomes, moderators, and other concepts identified in the review, together with the supporting references from the evidence base.
 
-![Main map](Images/Systems map screenshot.png)
+<p align="center">
+    <img src="Images/Systems map screenshot.png" width="900">
+</p>
 Figure 1
 
 ## Contents
