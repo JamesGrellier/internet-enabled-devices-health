@@ -28,37 +28,70 @@
       color: #d5dce3;
     }
 
-    .toolbar {
-      padding: 12px 24px;
-      background: white;
-      border-bottom: 1px solid #ddd;
+    .main-layout {
       display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
+      height: calc(100vh - 95px);
     }
 
-    .toolbar button {
-      padding: 8px 12px;
+    .sidebar {
+      width: 245px;
+      padding: 14px;
+      background: white;
+      border-right: 1px solid #ddd;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      font-size: 15px;
+      margin: 0 0 10px 0;
+      color: #333;
+    }
+    .sidebar {
+    width: 350px;
+    padding: 14px;
+    background: white;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    overflow-y: auto;
+    }
+
+    .sidebar button {
+      display: block;
+      width: 100%;
+      margin-bottom: 8px;
+      padding: 10px 12px;
       border: 1px solid #bbb;
       border-radius: 6px;
       background: #ffffff;
       cursor: pointer;
       font-size: 14px;
+      text-align: left;
     }
 
-    .toolbar button:hover {
+    .sidebar button:hover {
       background: #eef3f8;
     }
 
-    .toolbar button.active {
+    .sidebar button.active {
       background: #1f2933;
       color: white;
       border-color: #1f2933;
     }
+    
+    .button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    }
+    .button-grid button {
+    margin-bottom: 0;
+    }
 
     .viewer {
-      height: calc(100vh - 125px);
+      flex: 1;
       padding: 12px;
+      box-sizing: border-box;
     }
 
     iframe {
@@ -78,27 +111,51 @@
   <p>Interactive maps of relationships identified in the review. Click a connection to view supporting references.</p>
 </header>
 
-<div class="toolbar">
-  <button class="active" onclick="loadMap(this, 'GOLIAT_Theme_All_with_panel.html')">All relationships</button>
-  <button onclick="loadMap(this, 'GOLIAT_Theme_A_with_panel.html')">Theme A</button>
-  <button onclick="loadMap(this, 'GOLIAT_Theme_B_with_panel.html')">Theme B</button>
-  <button onclick="loadMap(this, 'GOLIAT_Theme_C_with_panel.html')">Theme C</button>
-  <button onclick="loadMap(this, 'GOLIAT_Theme_D_with_panel.html')">Theme D</button>
-  <button onclick="loadMap(this, 'GOLIAT_Theme_E_with_panel.html')">Theme E</button>
-  <button onclick="loadMap(this, 'GOLIAT_Theme_F_with_panel.html')">Theme F</button>
-  <button onclick="loadMap(this, 'GOLIAT_Positive_with_panel.html')">Positive impacts</button>
-  <button onclick="loadMap(this, 'GOLIAT_Negative_with_panel.html')">Negative impacts</button>
-</div>
+<div class="main-layout">
 
-<div class="viewer">
-  <iframe id="mapFrame" src="GOLIAT_Theme_All_with_panel.html"></iframe>
+  <nav class="sidebar">
+    <h2>Map views</h2>
+    <button class="active" onclick="loadMap(this, 'GOLIAT_Theme_All_with_panel.html')">All relationships</button>
+    <h3>By nature of impact</h3>
+    <div class="button-grid">
+    <button onclick="loadMap(this, 'GOLIAT_Positive_with_panel.html')">Positive impacts</button>
+    <button onclick="loadMap(this, 'GOLIAT_Negative_with_panel.html')">Negative impacts</button>
+    </div>
+    <h3>By theme</h3>
+    <div class="button-grid">
+    <button onclick="loadMap(this, 'GOLIAT_Theme_A_with_panel.html')">Theme A</button>
+    <button onclick="loadMap(this, 'GOLIAT_Theme_B_with_panel.html')">Theme B</button>
+    <button onclick="loadMap(this, 'GOLIAT_Theme_C_with_panel.html')">Theme C</button>
+    <button onclick="loadMap(this, 'GOLIAT_Theme_D_with_panel.html')">Theme D</button>
+    <button onclick="loadMap(this, 'GOLIAT_Theme_E_with_panel.html')">Theme E</button>
+    <button onclick="loadMap(this, 'GOLIAT_Theme_F_with_panel.html')">Theme F</button>
+    </div>
+    <h3>By confounder status</h3>
+    <div class="button-grid">
+    <button onclick="loadMap(this, 'GOLIAT_Confounder_with_panel.html')">All</button>
+    <button onclick="loadMap(this, 'GOLIAT_Confounder_Possible_with_panel.html')">Possible</button>
+    <button onclick="loadMap(this, 'GOLIAT_Confounder_Unlikely_with_panel.html')">Unlikely</button>
+    <button onclick="loadMap(this, 'GOLIAT_Confounder_Implausible_with_panel.html')">Implausible</button>
+    </div>
+        <h3>By strength of evidence</h3>
+    <button onclick="loadMap(this, 'GOLIAT_Evidence_with_panel.html')">All</button>
+    <button onclick="loadMap(this, 'GOLIAT_Evidence_Probable_association_with_panel.html')">Probable</button>
+    <button onclick="loadMap(this, 'GOLIAT_Evidence_Suggestive_association_with_panel.html')">Suggestive</button>
+    <button onclick="loadMap(this, 'GOLIAT_Evidence_Inconclusive_inconsistent_or_weak_evidence_with_panel.html')">Inconclusive (inconsistent/weak evidence)</button>
+    <button onclick="loadMap(this, 'GOLIAT_Evidence_Inconclusive_insufficient_evidence_with_panel.html')">Inconclusive (insufficient evidence)</button>
+  </nav>
+
+  <main class="viewer">
+    <iframe id="mapFrame" src="GOLIAT_Theme_All_with_panel.html"></iframe>
+  </main>
+
 </div>
 
 <script>
 function loadMap(button, file) {
   document.getElementById("mapFrame").src = file;
 
-  var buttons = document.querySelectorAll(".toolbar button");
+  var buttons = document.querySelectorAll(".sidebar button");
   buttons.forEach(function(btn) {
     btn.classList.remove("active");
   });
