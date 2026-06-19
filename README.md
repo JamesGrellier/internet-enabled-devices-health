@@ -1,5 +1,7 @@
 # Disentangling pathways between Internet-enabled device use and health: a systematic mapping review of reviews - Systems map
 
+
+
 ## Overview
 
 This repository contains an interactive systems map of relationships identified in a systematic mapping review of reviews examining the health impacts of internet-enabled technologies and online activities.
@@ -61,6 +63,10 @@ All visualisations were generated using open-source software, principally:
 
 The intention is to provide a long-term, reproducible alternative to proprietary online visualisation platforms.
 
+## Version
+
+Version 0.9
+
 ## Citation
 
 If you use these materials, please cite the associated publication:
@@ -83,7 +89,7 @@ All data in this repository are released under the Creative Commons Attribution 
 
 ## Author
 
-Dr J. Grellier
+Dr James Grellier
 European Centre for Environment and Human Health
 University of Exeter
 United Kingdom
