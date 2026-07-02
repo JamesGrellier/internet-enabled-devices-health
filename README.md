@@ -103,3 +103,7 @@ United Kingdom<br/>
 ## Contact
 
 For questions regarding the map, source data, or associated publication, please contact the repository author.
+
+## Funding
+
+This work was conducted as part of research funded by the European Union’s Horizon Europe research and innovation programme under Grant Agreement No. 101057262. Views and opinions expressed are however those of the authors only and do not necessarily reflect those of the European Union or the European Health and Digital Executive Agency. Neither the European Union nor the granting authority can be held responsible for them. The research also received funding from the UK Research and Innovation (UKRI) under the UK government’s Horizon Europe funding guarantee [grant numbers 10040206 and 10038101] as part of Horizon Europe [HORIZON-HLTH-2021-ENVHLTH-02] under grant agreement number [101057262], and from the Swiss State Secretariat for Education, Research and Innovation (SERI) under the Swiss government’s Horizon Europe funding guarantee as part of Horizon Europe [HORIZON-HLTH-2021-ENVHLTH-02] under grant agreement number [22.00086] and also funding from the Federal Office for the Environment [Grant no: 110014983].
