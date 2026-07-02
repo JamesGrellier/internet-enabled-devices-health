@@ -1465,8 +1465,15 @@ html <- '
 <body>
 
 <header>
-  <h1>Grellier et al. (2026) Disentangling pathways between Internet-enabled device use and health: a systematic evidence map of reviews</h1>
-  <p>Interactive maps of relationships identified in the review. Zoom in to view names of nodes. Click a connection to view supporting references.</p>
+  <h1>Grellier et al. (Submitted) Disentangling pathways between Internet-enabled device use and health: a systematic evidence map of reviews</h1>
+  <p>Interactive systems maps of relationships identified in the review. Zoom in to view names of nodes. Click a connection to view supporting references.</p>
+  <p style="margin-top:12px; font-size:13px; color:#d5dce3;">
+    Archived version:
+    <a href="https://doi.org/10.5281/zenodo.21130364"
+       style="color:white;">
+       https://doi.org/10.5281/zenodo.21130364
+    </a>
+  </p>
 </header>
 
 <div class="main-layout">
