@@ -67,7 +67,7 @@ All visualisations were generated using open-source software, principally:
 
 ## Version
 
-Version 0.9
+Version 1.0.1
 
 ## Citation
 
@@ -77,7 +77,7 @@ Grellier, J., Martin, L., White, M.P., de Vocht, F., Röösli, M., Guxens, M. Di
 
 Archived version of this repository:
 
-DOI: [INSERT ZENODO DOI HERE]
+[![DOI](https://zenodo.org/badge/1273309121.svg)](https://doi.org/10.5281/zenodo.21130364)
 
 ## Licence
 
