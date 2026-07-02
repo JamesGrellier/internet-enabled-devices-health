@@ -40,17 +40,16 @@ The main entry point is:
 
 The repository includes the source data used to generate the maps:
 
-* `Elements.csv`
-* `Connections.csv`
+* `20260616 GOLIATmap.xlsx`
 
-Additional processed data files may include:
+Additional processed data files include:
 
 * `nodes_with_coords_sized.csv`
 * `edges_collapsed.csv`
 
 ### Code
 
-The repository includes R scripts used to:
+The repository includes an R script (`GOLIAT Create systems map.R`) used to:
 
 * Process source data
 * Generate node coordinates
