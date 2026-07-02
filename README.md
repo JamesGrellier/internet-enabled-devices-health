@@ -76,9 +76,9 @@ If you use these materials, please cite the associated publication:
 Grellier, J., Martin, L., White, M.P., de Vocht, F., Röösli, M., Guxens, M. Disentangling pathways between internet-enabled device use and human health: A systematic evidence map of reviews. (Under review).
 
 ## Archived version
-Archived version of this repository:
+A permanent archived version of this repository is available from Zenodo:
 
-[![DOI](https://zenodo.org/badge/1273309121.svg)](https://doi.org/10.5281/zenodo.21130364)
+**DOI:** [10.5281/zenodo.21130364](https://doi.org/10.5281/zenodo.21130364)
 
 ## Licence
 
