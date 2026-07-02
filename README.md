@@ -4,11 +4,11 @@
 
 ## Overview
 
-This repository contains an interactive systems map of relationships identified in a systematic mapping review of reviews examining the health impacts of internet-enabled technologies and online activities (Figure 1).
+This repository contains interactive systems maps of relationships identified in a systematic evidence map of reviews examining the health impacts of internet-enabled device use (Figure 1).
 
 The visualisation was created using R and HTML to provide a fully reproducible, platform-independent, and archivable version of the map.
 
-The interactive maps allow users to explore relationships between exposures, outcomes, moderators, and other concepts identified in the review, together with the supporting references from the evidence base.
+The interactive systems maps allow users to explore relationships between exposures, outcomes and moderators identified in the review, together with the supporting references from the evidence base.
 
 <p align="center">
     <img src="Images/Systems map screenshot.png" width="900">
@@ -53,7 +53,7 @@ The repository includes an R script (`GOLIAT Create systems map.R`) used to:
 
 * Process source data
 * Generate node coordinates
-* Create interactive visNetwork visualisations
+* Create interactive visNetwork visualisations (systems maps)
 * Export standalone HTML maps
 
 ## Reproducibility
@@ -81,8 +81,17 @@ DOI: [INSERT ZENODO DOI HERE]
 
 ## Licence
 
-- **R source code:** GNU GPL v3.0
-- **Documentation, HTML visualisations, figures and processed datasets:** Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
+This repository contains both software and research outputs, which are licensed separately.
+
+| Content | Licence |
+|---------|----------|
+| R source code (`*.R`) | GNU General Public License v3.0 (GPL-3.0) |
+| Interactive systems maps (`*.html`) | Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) |
+| Curated evidence datasets (`*.csv`, `*.xlsx`) | Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) |
+| Documentation (`README.md`) | Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) |
+| Figures and screenshots (`images/*`) | Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) |
+
+See the LICENSE file for full licensing information.
 
 ## Author
 
