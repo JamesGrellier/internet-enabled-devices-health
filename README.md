@@ -6,7 +6,7 @@
 
 This repository contains an interactive systems map of relationships identified in a systematic mapping review of reviews examining the health impacts of internet-enabled technologies and online activities (Figure 1).
 
-The visualisation was originally developed in Kumu and subsequently recreated using R and HTML to provide a fully reproducible, platform-independent, and archivable version of the map.
+The visualisation was created using R and HTML to provide a fully reproducible, platform-independent, and archivable version of the map.
 
 The interactive maps allow users to explore relationships between exposures, outcomes, moderators, and other concepts identified in the review, together with the supporting references from the evidence base.
 
@@ -66,8 +66,6 @@ All visualisations were generated using open-source software, principally:
 * visNetwork
 * htmltools
 
-The intention is to provide a long-term, reproducible alternative to proprietary online visualisation platforms.
-
 ## Version
 
 Version 0.9
@@ -76,7 +74,7 @@ Version 0.9
 
 If you use these materials, please cite the associated publication:
 
-[INSERT FULL CITATION HERE]
+Grellier, J., Martin, L., White, M.P., de Vocht, F., Röösli, M., Guxens, M. Disentangling pathways between internet-enabled device use and human health: A systematic evidence map of reviews. (Under review).
 
 Archived version of this repository:
 
