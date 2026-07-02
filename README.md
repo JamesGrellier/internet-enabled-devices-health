@@ -80,15 +80,10 @@ Archived version of this repository:
 
 DOI: [INSERT ZENODO DOI HERE]
 
-## Licensing
+## Licence
 
-### Code
-
-All code in this repository is released under the MIT License.
-
-### Data
-
-All data in this repository are released under the Creative Commons Attribution 4.0 International (CC BY 4.0) licence unless otherwise stated.
+- **R source code:** GNU GPL v3.0
+- **Documentation, HTML visualisations, figures and processed datasets:** Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
 
 ## Author
 
