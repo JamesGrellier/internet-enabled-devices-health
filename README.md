@@ -87,10 +87,10 @@ DOI: [INSERT ZENODO DOI HERE]
 
 ## Author
 
-Dr James Grellier
-European Centre for Environment and Human Health
-University of Exeter
-United Kingdom
+Dr James Grellier<br/>
+European Centre for Environment and Human Health<br/>
+University of Exeter<br/>
+United Kingdom<br/>
 
 ## Contact
 
